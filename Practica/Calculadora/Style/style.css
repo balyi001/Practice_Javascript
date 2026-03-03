@@ -1,0 +1,99 @@
+/* Estilo Base */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e0e5ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor principal */
+.calculator-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Inputs de número y texto */
+input[type="number"],
+input[type="text"] {
+    background-color: #e0e5ec;
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: inset 6px 6px 12px #b8bec5,
+        inset -6px -6px 12px #ffffff;
+    outline: none;
+    color: #444;
+    font-size: 16px;
+    width: 200px;
+    display: block;
+    /* Ahora los inputs bajan solitos */
+    transition: all 0.3s ease;
+}
+
+#respuesta {
+    color: #2d5a27;
+    font-weight: bold;
+    cursor: default;
+}
+
+/* Contenedor de botones */
+.button-grid {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Botones */
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e0e5ec;
+    box-shadow: 6px 6px 12px #b8bec5,
+        -6px -6px 12px #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    color: #000;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: inset 4px 4px 8px #b8bec5,
+        inset -4px -4px 8px #ffffff;
+    transform: translateY(0);
+}
+
+/* El DIV de resultado */
+#resultadoDiv {
+    margin: 20px auto 0;
+    padding: 20px;
+    width: 200px;
+    min-height: 40px;
+    text-align: center;
+    border-radius: 15px;
+    background: #e0e5ec;
+    box-shadow: 9px 9px 16px #b8bec5,
+        -9px -9px 16px #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    color: #4a90e2;
+}

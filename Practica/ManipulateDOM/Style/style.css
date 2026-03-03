@@ -1,0 +1,15 @@
+.error{
+    color: yellow;
+    font-weight: bold;
+}
+
+.correct{
+    color: green;
+    font-weight: bold;
+}
+
+#result{
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}

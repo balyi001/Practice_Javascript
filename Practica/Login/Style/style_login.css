@@ -1,0 +1,116 @@
+/* Estilos Generales y Fondo */
+body {
+    /* Fondo muy oscuro, casi negro, como el de Spotify */
+    background-color: #121212;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    /* Fuente moderna */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #ffffff;
+    /* Color de texto por defecto blanco */
+}
+
+/* Contenedor del Formulario */
+.login-box {
+    /* Fondo oscuro para la tarjeta */
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 12px;
+    /* Ligeramente más redondeado */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    /* Sombra más pronunciada */
+    width: 320px;
+    text-align: center;
+}
+
+/* Encabezado Sign In */
+h1 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Estilos de los Campos de Entrada */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #333333;
+    /* Borde sutil */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    /* Fondo oscuro y texto blanco para los campos */
+    background-color: #242424;
+    color: #ffffff;
+    /* Placeholder con un color más sutil */
+    opacity: 0.7;
+}
+
+/* Estilos del Botón de Login */
+.login-button {
+    width: 100%;
+    padding: 15px;
+    /* Color de acento de Spotify: Verde brillante */
+    background-color: #ffffff;
+    color: #000000;
+    /* Texto negro en el botón verde */
+    border: none;
+    border-radius: 50px;
+    /* Botón completamente redondeado */
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: transform 0.2s, background-color 0.2s;
+    letter-spacing: 1px;
+    /* Espaciado para el texto del botón */
+}
+
+.login-button:hover {
+    background-color: #979797;
+    transform: scale(1.02);
+    /* Efecto sutil de levantamiento */
+}
+
+/* Estilos del Enlace */
+.links {
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+}
+
+.links a {
+    /* Color de enlace más claro para contraste, similar al blanco o gris claro */
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
+    margin-left: 10px;
+}
+
+.links a:hover {
+    color: #7a7a7a;
+    /* Se vuelve blanco puro al pasar el ratón */
+}
+
+/* Estilo específico para el enlace de Signup */
+.signup-link {
+    font-weight: 500;
+}
+
+/* Responsividad */
+@media (max-width: 400px) {
+    .login-box {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

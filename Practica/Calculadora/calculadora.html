@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <div class="calculator-card">
+        <input type="number" id="num1" placeholder="Número 1">
+        <input type="number" id="num2" placeholder="Número 2">
+        <input type="text" id="respuesta" placeholder="Respuesta" readonly>
+
+        <div class="button-grid">
+            <button onclick="hacerOperacion('+')">+</button>
+            <button onclick="hacerOperacion('-')">-</button>
+            <button onclick="multiplicar()">*</button>
+            <button onclick="dividir()">/</button>
+            <button onclick="porcentaje()">%</button>
+        </div>
+
+        <div id="resultadoDiv">0</div>
+    </div>
+
+    <script src="./Js/funciones.js"></script>
+</body>
+
+</html>
