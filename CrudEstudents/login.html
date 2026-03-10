@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Style/login.css">
+</head>
+<body>
+    <div class="contenedor-login">
+        <h2>Ingreso al Sistema</h2>
+        <div class="campo">
+            <label>Usuario:</label>
+            <input type="text" id="usuario" placeholder="Ingrese su usuario">
+        </div>
+        <div class="campo">
+            <label>Contraseña:</label>
+            <input type="password" id="password" placeholder="Ingrese su contraseña">
+        </div>
+        <button onclick="validarAcceso()">Entrar</button>
+        <p id="mensajeError" class="error"></p>
+    </div>
+    <script src="Js/login.js"></script>
+</body>
+</html>
