@@ -49,7 +49,6 @@ function guardarEstudiante() {
     window.location.reload();
 }
 
-// Cargar tabla sin innerHTML
 const cuerpo = document.querySelector("#tablaCuerpo");
 if (cuerpo) {
     lista.forEach(est => {
